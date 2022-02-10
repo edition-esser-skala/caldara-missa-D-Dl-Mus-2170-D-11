@@ -1,0 +1,17 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Missa a 4
+genre: mass
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 vl, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: D-Dl
+    shelfmark: Mus.2170-D-11
+    date: 1736-1739
+    rism: 212006715
+    url: http://digital.slub-dresden.de/id426604385
+    license: public domain
+    principal: true
+imslp:
