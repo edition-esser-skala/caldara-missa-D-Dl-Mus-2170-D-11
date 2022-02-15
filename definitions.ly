@@ -14,6 +14,11 @@ markKyrieUtSupra = {
 
 tempoKyrie = \tempoMarkup "Allegro"
   tempoChriste = \tempoMarkup "Adagio"
+tempoGloria = \tempoMarkup "Allegro"
+  tempoQuiTollis = \tempoMarkup "Adagio"
+  tempoQuoniam = \tempoMarkup "[Allegro]"
+  tempoAmen = \tempoMarkup "Presto"
+  tempoAmenB = \tempoMarkup "Adagio"
 
 
 \include "notes/vl1.ly"
