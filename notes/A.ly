@@ -337,3 +337,141 @@ CredoAltoLyrics = \lyricmode {
 
   men. %112 finis
 }
+
+SanctusAlto = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoSanctus
+    r2 \mvTr d4\fE^\tuttiE es8[ f]
+    g1~
+    g4 d \once \tieDashed e2~
+    e e
+    r fis?4 g~ %5
+    g fis? b2
+    \once \tieDashed a2~ a4 g8[ f]
+    e4 f2 e4
+    f2 f4 f
+    g g8 g g([ f)] es([ f)] %10
+    g([ f] es4 d4.) d8
+    c2 c4 d8([ es)] \noBreak
+    f4. f8 d2\fermata \bar "||"
+    \time 3/2 \tempoPleni \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      b4 d f b2 a8[ g] \noBreak
+    f2 f4 f g2 %15
+    fis r4 r d8[( e! f? d]
+    e4.) e8 f4(^\critnote g) f( e)
+    f2 r4 r f8([ g as f] \noBreak
+    g4.) f8 es4 es( d2) \bar "||"
+    \time 4/4 \tempoOsanna \newSpacingSection
+      \revert Staff.TimeSignature.style
+      d8 d g fis b a a([ g] \noBreak %20
+    f4) e r2
+    r4 r8 d g fis b a
+    a g4 a8 g4 f
+    e f2 \once \tieDashed es4~
+    es d8[ es] f2 \noBreak %25
+    f1\fermata \bar "||"
+    \tempoBenedictus \mvTr c4.\pE^\soloE f8 f4 e8 e \noBreak
+    d[( e16 f] g2 f4)
+    e a a8. g16 g4
+    g4 f16[ g f g] e[ g f e32 d] e16[ c d h] %30
+    c4 f2 e4
+    f a a8[( b16 g] a[ f g e]
+    f8.) c16 c4 b4. b8 \noBreak
+    a1\fermata \bar "||"
+    \tempoOsannaII R1 \noBreak %35
+    \mvTr c2\fE^\tuttiE d
+    e r
+    r4 c8 b a[ f] f'4~
+    f e f e8[ d]
+    g2 f %40
+    e r
+    r f
+    g a
+    R1
+    r8 e4 d8 c[ a a' g] %45
+    f[ e] d2 cis4
+    d2 e4 a~
+    a8 d, g2 f4~
+    f e f2
+    r f %50
+    g a
+    r r4 c,8 b
+    a[( f] f'2 e4)
+    f2 g~
+    g4 f2 e8([ d] %55
+    e2) f\fermata \bar "|." %56 finis
+  }
+}
+
+SanctusAltoLyrics = \lyricmode {
+  San -- _
+  _
+  _ _
+  ctus,
+  san -- _ %5
+  _ _
+  _ _
+  _ _ _
+  ctus, san -- ctus
+  Do -- mi -- nus De -- us %10
+  Sa -- ba --
+  oth, De -- us
+  Sa -- ba -- oth.
+  Ple -- ni sunt coe -- _
+  _ li et ter -- %15
+  ra glo --
+  ri -- a __ tu --
+  a, glo --
+  ri -- a tu --
+  a. O -- san -- na in ex -- cel -- %20
+  sis,
+  o -- san -- na in ex --
+  cel -- sis, in ex -- cel --
+  _ _ _
+  _ _ %25
+  sis.
+  Be -- ne -- di -- ctus, qui
+  ve --
+  nit in no -- mi -- ne
+  Do -- _ _ _ %30
+  _ _ mi --
+  ni, in no --
+  mi -- ne Do -- mi --
+  ni.
+  %35
+  O -- san --
+  na
+  in ex -- cel -- _
+  _ _ _
+  _ _ %40
+  sis,
+  o --
+  san -- na
+
+  in ex -- cel -- %45
+  _ _ _
+  sis, o -- san --
+  na in ex --
+  cel -- sis,
+  o -- %50
+  san -- na
+  in ex --
+  cel --
+  sis, in __
+  ex -- cel -- %55
+  sis. %56 finis
+}
+
+AgnusAlto = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoAgnus
+    
+  }
+}
+
+AgnusAltoLyrics = \lyricmode {
+
+}

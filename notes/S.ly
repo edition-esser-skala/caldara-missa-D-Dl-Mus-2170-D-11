@@ -399,22 +399,131 @@ CredoSopranoLyrics = \lyricmode {
   men. %112 finis
 }
 
-% San -- ctus Do -- mi -- nus De -- us Sa -- ba -- oth.
-% Ple -- ni sunt coe -- li et ter -- ra glo -- ri -- a tu -- a.
-% O -- san -- na in ex -- cel -- sis.
-%
-%
-% ## Benedictus
-%
-% Be -- ne -- di -- ctus, qui ve -- nit in no -- mi -- ne Do -- mi -- ni.
-% O -- san -- na in ex -- cel -- sis.
-%
-%
-% ## Agnus Dei
-%
+SanctusSoprano = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoSanctus
+    \mvTr f'2.\fE^\tuttiE es4
+    d2. c4~
+    c h8[ a] gis4 \once \tieDashed a~
+    a gis a2
+    r4 a2 b!8[ c] %5
+    d4 a2 \once \tieDashed g4~
+    g f!2 \once \tieDashed b4~
+    b a g2
+    f4 c'2 b4
+    d^\critnote es8 es d4 c %10
+    h8([ a] g2) g4
+    g2 a4 b \noBreak
+    b a b2\fermata \bar "||"
+    \time 3/2 \tempoPleni \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      r2 r4 d d c \noBreak
+    d2 c4 d d( c) %15
+    d a8[ b c a] \once \tieDashed b2.~
+    b4. b8 a4 g2.^\critnote
+    f4 c'8[ d es c] d2 c4 \noBreak
+    b4. b8 b4 a2.^\critnote \bar "||"
+    \time 4/4 \tempoOsanna \newSpacingSection
+      \revert Staff.TimeSignature.style
+      g4 r8 a d cis f! e \noBreak %20
+    e d4 cis16 h? a4. \once \tieDashed g8~
+    g[ fis] b16[ c] d4 c?8 d4
+    d d c2^\critnote
+    c1
+    c4 b2 a4 \noBreak %25
+    b1\fermata \bar "||"
+    \tempoBenedictus R1*7 \noBreak %33
+    R1\fermata \bar "||"
+    \tempoOsannaII R1*2 %36
+    r2 \mvTr f\fE^\tuttiE
+    g a
+    r4 c8 b a f \once \tieDashed f'4~
+    f e2 d4~ %40
+    d c2 h4
+    c2 d
+    R1
+    r2 d
+    e1 %45
+    f2 r4 a,8 g
+    f[ d] d'2 c!4
+    b!2 a
+    g r
+    g a %50
+    b r4 d8 c
+    b[ g] d'2 c4~
+    c h c2
+    c c4.( b8)
+    a2 g~ %55
+    g f\fermata \bar "|." %56 finis
+  }
+}
+
+SanctusSopranoLyrics = \lyricmode {
+  San -- _
+  _ _
+  _ _ _
+  _ ctus,
+  san -- _ %5
+  _ _ _
+  _ _
+  _ _
+  ctus, san -- ctus
+  Do -- mi -- nus De -- us %10
+  Sa -- ba --
+  oth, De -- us
+  Sa -- ba -- oth.
+  Ple -- ni sunt
+  coe -- li et ter -- %15
+  ra glo -- _
+  ri -- a tu --
+  a, glo -- _ _
+  _ ri -- a tu --
+  a. O -- san -- na in ex -- %20
+  cel -- sis, in ex -- cel -- _
+  _ _ _ sis,
+  in ex -- cel --
+  sis,
+  in ex -- cel -- %25
+  sis.
+
+  O -- %37
+  san -- na
+  in ex -- cel -- sis in __
+  ex -- cel -- %40
+  _ _
+  _ sis,
+
+  o --
+  san -- %45
+  na in ex --
+  cel -- _ _
+  _ _
+  sis,
+  o -- san -- %50
+  na in ex --
+  cel -- _ _
+  _ sis,
+  in ex --
+  cel -- _ %55
+  sis. %56 finis
+}
+
 % A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
 % Mi -- se -- re -- re no -- bis.
 % A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
 % Mi -- se -- re -- re no -- bis.
 % A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
 % Do -- na no -- bis pa -- cem.
+
+AgnusSoprano = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoAgnus
+    
+  }
+}
+
+AgnusSopranoLyrics = \lyricmode {
+
+}

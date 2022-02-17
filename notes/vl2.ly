@@ -209,3 +209,71 @@ CredoViolinoII = {
     c1\fermata \bar "|." %112 finis
   }
 }
+
+SanctusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoSanctus
+    f'2.\fE es4
+    d2. c4~
+    c h8 a gis4 \once \tieDashed a~
+    a gis a2
+    r4 a2 b!8 c %5
+    d4 a2 \once \tieDashed g4~
+    g f!2 \once \tieDashed b4~
+    b a g2
+    f4 c'2 b4
+    d^\critnote es d c %10
+    h8 a g2 g4
+    g2 a4 b \noBreak
+    b a b2\fermata \bar "||"
+    \time 3/2 \tempoPleni \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      r2 r4 d2 c4 \noBreak
+    d2 c4 d2 c4 %15
+    d a8[ b c a] \once \tieDashed b2.~
+    b2 a4 \once \tieDashed g~ g2
+    f4 c'8[ d es] c d2 c4 \noBreak
+    b2. \once \tieDashed a4~ a2 \bar "||"
+    \time 4/4 \tempoOsanna \newSpacingSection
+      \revert Staff.TimeSignature.style
+      g4 r8 a d cis f! e \noBreak %20
+    e d4 cis16 h? a4. \once \tieDashed g8~
+    g fis b16 c d4 c?8 d4
+    d2^\critnote c~
+    c c~
+    c4 \once \tieDashed b~ b a \noBreak %25
+    b1\fermata \bar "||"
+    \tempoBenedictus R1*7 \noBreak %33
+    R1\fermata \bar "||"
+    \tempoOsannaII R1*2 %36
+    r2 \mvTr f\fE^\tuttiE
+    g a
+    r4 c8 b a f \once \tieDashed f'4~
+    f e2 d4~ %40
+    d c2 h4
+    c2 d
+    R1
+    r2 d
+    e1 %45
+    f2 r4 a,8 g
+    f d d'2 c!4
+    b!2 a
+    g r
+    g a %50
+    b r4 d8 c
+    b g d'2 c4~
+    c h c2
+    c c4. b8
+    a2 g~ %55
+    g f\fermata \bar "|." %56 finis
+  }
+}
+
+AgnusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoAgnus
+    
+  }
+}

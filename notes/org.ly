@@ -469,3 +469,151 @@ CredoBassFigures = \figuremode {
   r
   r %112 finis
 }
+
+SanctusOrgano = {
+  \relative c {
+    \clef treble
+    \key f \major \time 4/4 \tempoSanctus
+    << { f''2 } \\ { \mvTr r4\fE-\tuttiE d,8 c } >> \clef bass g2
+    g g
+    g4. f8 \once \tieDashed e2~
+    e a,
+    \clef treble << { r4 a'' } \\ { c,2 } >> \clef bass \once \tieDashed d,~ %5
+    \once \tieDashed d1~
+    d4. c8 b2
+    c c
+    f b,4. as8
+    g2 g %10
+    g g
+    c f4 b,! \noBreak
+    f2 b\fermata \bar "||"
+    \clef treble \time 3/2 \tempoPleni \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      b'4 d f \clef bass b,, d f \noBreak
+    b2 f4 b es,2 %15
+    d r4 r b8 c d b
+    c2 d8 c b4 c2
+    f r4 r d8 es f d \noBreak
+    es4. d8 c4 c d2 \bar "||"
+    \time 4/4 \tempoOsanna \newSpacingSection
+      \revert Staff.TimeSignature.style
+      g,4 \clef treble << {
+        r8 a'' d cis f e \noBreak %20
+        e d4_\critnote
+      } \\ {
+        g,8 fis b a4
+        g8 f4 e8
+      } >> \clef "treble_8" a, d cis f e
+    d-\critnote \clef bass d,[ g fis] b a g fis
+    g4. f8 e4 f
+    c2 c
+    f1 \noBreak %25
+    b,\fermata \bar "||"
+    \tempoBenedictus \mvTr f'2\pE-\soloE c \noBreak
+    g' d
+    a' b4. g8
+    d4. b8 c2 %30
+    c8 b! a g16 f c'2
+    f, f'-\tasto
+    f f4 e \noBreak
+    f1\fermata \bar "||"
+    \tempoOsannaII << { f2 g } \\ { \mvTr r\fE-\tuttiE r4 c,8 b } >> \noBreak %35
+    a f f' e d c h4
+    c2 d
+    e \clef "treble_8" f
+    \clef bass c d
+    e \clef treble << { e''4 d } \\ { f,2 } >> %40
+    \clef "treble_8" c \clef bass g4. f8
+    e c c'2 b!8 a
+    g f e4 f2
+    c4 c'2 h8 a
+    a4 gis a2 %45
+    d, a
+    \clef treble << {
+      f''8 d d'2 c!4
+      b!2 a
+    } \\ {
+      d, e4 a~
+      a8 d, g2 f4
+    } >>
+    \clef bass c,2 d
+    e \clef "treble_8" d'4 \clef bass d,8 c %50
+    b[ g] g'2 fis4
+    g2 c,
+    d c
+    c2. c4
+    c1~ %55
+    c2 f,\fermata \bar "|." %56 finis
+  }
+}
+
+SanctusBassFigures = \figuremode {
+  r2 <7 _!>4 <6- 4>
+  <5 \t> <\t _!> <6- 5> <\t 4>
+  <5 \t> <\t _!> <7 [5!] _+> <6 4>
+  <5! \t> <\t _+>2.
+  r2 \bo <[7] _+>4 \bc <[6-] 4> %5
+  <5 \t> <\t _+> <6 5> <\t 4>
+  <5 \t> <\t _!> <7> <6>8 <5>
+  <7 3>4 <6 4> <5 \t> <\t 3>
+  r2 <9>4 <8>
+  <5 _!> <6- 4> <5 _!> <6- 4> %10
+  <5 _!> <6- 4> \bo <[5 \t]> \bc <[\t _!]>
+  <_->2 <7->
+  <4>4 <3>2.
+  r1 \bo <[6]>4 <5>
+  r1 <7>4 <6> %15
+  <_+>1 \bc <[5!]>2
+  <7>2. <6 5>4 <4> <3>
+  r1 \bo <[6]>4 <_->
+  r4. \bc <[6]>8 <7 _->4 <6 \t> <4> <_+>
+  r1 %20
+  r4 <4>8 <_+>4 \bo <[6]>8 <6> \bc <[6\\]>
+  <4> <_+> <_-> <6> q <6\\> <8> <6>
+  <9> <8>4 <[6]>8 <6>2
+  <5 3>4 <6 4> <5 \t> <\t _->
+  <7- 3> <6 4> <5 \t> <\t 3> %25
+  r1
+  r2 <4>4 <3>
+  <4> <3> <4> <3>
+  <4> <_+> <7> <6>
+  \bo <[6 4]> \bc <[5 3]>2. %30
+  r4 <[6]> <4> <3>
+  r1
+  r2 <2>4 <6 5>
+  r1
+  r %35
+  <6>2. <6 5>4
+  r2 <7>4 <6->8 <5>
+  <6>4. <5>8 r2
+  <4>4 <3>2.
+  <9>4 <8>2. %40
+  <9>4 <8> <4> <_!>
+  <6> <3> <2>2
+  r4 <6 5>2.
+  <[4]>4 <3> <2>2
+  <4 2!>4 <\t \t> <_!> <_+> %45
+  r2 <5 4>4 <\t _+>
+  r1
+  r
+  <4>4 <3> <5>2
+  <9>4 <8> <4 2>2 %50
+  <6>4 <3> <2> <6 5>
+  r2 <9>4 <8>
+  <7> <6!> <4> <3>
+  <6 4>2 <5 \t>4 <\t 3>
+  <6 5> <[\t 4]> <4> \bo <[3]>8 \bc <[2]> %55
+  <3>1 %56 finis
+}
+
+AgnusOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \tempoAgnus
+    
+  }
+}
+
+AgnusBassFigures = \figuremode {
+
+}

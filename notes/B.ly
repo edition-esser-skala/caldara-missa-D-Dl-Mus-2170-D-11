@@ -338,3 +338,126 @@ CredoBassoLyrics = \lyricmode {
   a --
   \x men. %68 finis
 }
+
+SanctusBasso = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \autoBeamOff \tempoSanctus
+    \tieDashed r2 \mvTr g'~\fE^\tuttiE
+    g1~
+    g4. f8 e2~
+    e a,
+    r d~ %5
+    d1~ \tieSolid
+    d4. c8 b2
+    c1
+    f2 b,4. as8
+    g4 g8 g g4 g %10
+    g2. g4
+    c2 f4 b,! \noBreak
+    f4. f8 b2\fermata \bar "||"
+    \time 3/2 \tempoPleni \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      r2 r4 b d f \noBreak
+    b2 f4 b es,2 %15
+    d r4 r b8[( c d b]
+    c4.) c8 d([ c)] b4( c2)
+    f r4 r d8([ es f d] \noBreak
+    es4.) d8 c4 c( d2) \bar "||"
+    \time 4/4 \tempoOsanna \newSpacingSection
+      \revert Staff.TimeSignature.style
+      g,4 r r2 \noBreak %20
+    R1
+    r8 d' g fis b a g[ fis]
+    g4. f8 e4 f
+    c2. c4
+    f1 \noBreak %25
+    b,\fermata \bar "||"
+    \tempoBenedictus R1*7 \noBreak %33
+    R1\fermata \bar "||"
+    \tempoOsannaII r2 r4 \mvTr c8\fE^\tuttiE b \noBreak %35
+    a[ f f' e] d[ c] h4
+    c2 d
+    e r
+    c d
+    e r %40
+    r g4. f8
+    e[ c] c'2 b!8[ a]
+    g[ f] e4 f2
+    c4 c'2 h8[( a)]
+    a4 gis a2 %45
+    d, a
+    R1*2
+    c2 d
+    e r4 d8 c %50
+    b[( g] g'2 fis4)
+    g2 c,
+    d c
+    c2. c4
+    c1~ %55
+    c2 f,\fermata \bar "|." %56 finis
+  }
+}
+
+SanctusBassoLyrics = \lyricmode {
+  San --
+
+  _ _
+  ctus,
+  san -- %5
+
+  _ _
+  _
+  ctus, san -- ctus
+  Do -- mi -- nus De -- us %10
+  Sa -- ba --
+  oth, De -- us
+  Sa -- ba -- oth.
+  Ple -- ni sunt
+  coe -- li et ter -- %15
+  ra glo --
+  ri -- a __ tu --
+  a, glo --
+  ri -- a tu --
+  a. %20
+
+  O -- san -- na in ex -- cel --
+  _ _ _ sis,
+  in ex --
+  cel -- %25
+  sis.
+
+  In ex -- %35
+  cel -- _ _
+  _ _
+  sis,
+  o -- san --
+  na %40
+  in ex --
+  cel -- _ _
+  _ _ _
+  sis, in ex --
+  cel -- _ _ %45
+  _ sis,
+
+  o -- san -- %49
+  na in ex -- %50
+  cel --
+  sis, o --
+  san -- na
+  in ex --
+  cel -- %55
+  sis. %56 finis
+}
+
+AgnusBasso = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \autoBeamOff \tempoAgnus
+    
+  }
+}
+
+AgnusBassoLyrics = \lyricmode {
+
+}

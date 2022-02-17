@@ -355,3 +355,137 @@ CredoTenoreLyrics = \lyricmode {
   _ _
   \x men. %112 finis
 }
+
+SanctusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \major \time 4/4 \autoBeamOff \tempoSanctus
+    r4 \mvTr d8[\fE^\tuttiE c] h4 c~
+    c h es2
+    d2. c4
+    h2 a
+    c2. b4 %5
+    \once \tieDashed a2~ a4 b8[ c]
+    d1
+    g,4 a8[ b] c2
+    a d4 ^\critnote d
+    h^\critnote c8 c h4 c %10
+    d \once \tieDashed c~ c h
+    c es2 d4 \noBreak
+    c4. c8 b2\fermata \bar "||"
+    \time 3/2 \tempoPleni \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      r2 r4 f' f f \noBreak
+    f2 a,4 d b( g) %15
+    a fis8[ g a fis] g[ a] b4 f
+    e8 g4 g8 f4 d'( c2)
+    c4 a8[ b c a] b2 as4 \noBreak
+    g4. g8 g2 g4( fis) \bar "||"
+    \time 4/4 \tempoOsanna \newSpacingSection
+      \revert Staff.TimeSignature.style
+      g4 r r2 \noBreak %20
+    r4 r8 a d cis f e
+    d4 d d8 c b16[ c d c]
+    b4. a16[ b] c8[ b] a4
+    g a g c8([ b)]
+    a4( b c2) \noBreak %25
+    d1\fermata \bar "||"
+    \tempoBenedictus r2 \mvTr g,4.\pE^\soloE c8 \noBreak
+    c4 b8 b a4 d~
+    d cis r b
+    b8. a16 a4 g16[ b a f] g[ e f d] %30
+    e4 a8[ b] g4. f8
+    f4 f' es16[( c d b] c[ a b g]
+    a8.) a16 a4 g4. g8 \noBreak
+    f1\fermata \bar "||"
+    \tempoOsannaII \mvTr f2\fE^\tuttiE g \noBreak %35
+    a r4 g8 f
+    e[ c] c'2 b!8[ a]
+    g2 f
+    R1*2 %40
+    c'2 d
+    e r
+    r4 c8 b a[ f] f'4~
+    f e f8[ e d c]
+    h2 c4 cis %45
+    d2 e
+    R1*2
+    r4 c8 b a[ f] \once \tieDashed f'4~
+    f^\critnote e d r %50
+    R1
+    r2 e,
+    f g4 c8 b
+    a[ f] f'2 e8[ d]
+    \once \tieDashed c1~
+    c2 \mvTrr c\fermata^\critnote \bar "|."
+  }
+}
+
+SanctusTenoreLyrics = \lyricmode {
+  San -- _ _
+  _ _
+  _ _
+  _ ctus,
+  san -- _ %5
+  _ _
+  _
+  _ _ _
+  ctus, san -- ctus
+  Do -- mi -- nus De -- us %10
+  \xE Sa -- _ \x ba --
+  oth, De -- us
+  Sa -- ba -- oth.
+  Ple -- ni sunt
+  coe -- li et ter -- %15
+  ra glo -- _ _ _
+  _ _ ri -- a tu --
+  a, glo -- _ _
+  _ ri -- a tu --
+  a. %20
+  O -- san -- na in ex --
+  cel -- sis, in ex -- cel --
+  _ _ _ _
+  _ sis, in ex --
+  cel -- %25
+  sis.
+  Be -- ne --
+  di -- ctus, qui ve -- _
+  nit in
+  no -- mi -- ne Do -- _ %30
+  _ _ _ mi --
+  ni, in no --
+  mi -- ne Do -- mi --
+  ni.
+  O -- san -- %35
+  na in ex --
+  cel -- _ _
+  _ sis,
+
+  o -- san -- %41
+  na
+  in ex -- cel -- _
+  _ _
+  _ _ _ %45
+  _ sis,
+
+  in ex -- cel -- _ %49
+  _ sis, %50
+
+  o --
+  san -- na in ex --
+  cel -- _ _
+  _ %55
+  sis. %56 finis
+}
+
+AgnusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \major \time 4/4 \autoBeamOff \tempoAgnus
+    
+  }
+}
+
+AgnusTenoreLyrics = \lyricmode {
+
+}
