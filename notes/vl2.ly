@@ -99,3 +99,113 @@ GloriaViolinoII = {
     c1\fermata \bar "|." %68 finis
   }
 }
+
+CredoViolinoII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 3/2 \tempoCredo
+    f'2\p c d
+    r b c
+    r4 a b c f,2
+    g4 a8 b c4 a a2
+    g g4 c2 h4 %5
+    c g2 a4 b a~
+    a g a h cis2
+    r4 a2 a4 a8 g f e
+    d4 e8 f g4 d e f
+    g a2 d8 c h4 fis %10
+    gis a2 gis4 a2
+    R1.*4 %15
+    d2\fE e4 d e2
+    d e4 f2 c4~
+    c^\critnote c2 c4 cis2
+    d4 a2 a4 a2
+    b1 a2 %20
+    g2 g4 f2 e4
+    f2 r c'\pE
+    d e4 f cis h
+    cis2 d2. c4
+    b c d2 c %25
+    c2. d4 e d
+    c1.
+    r2 b a4 g
+    a2 g4 f g a
+    b d c1 \noBreak %30
+    a1.\fermata \bar "||"
+    \time 4/4 \tempoQuiPropter \newSpacingSection
+      r4^\critnote a\fE a2 \noBreak
+    b r4 b
+    gis4. a8 h4 e,
+    c'2 cis4 d %35
+    e a, r8 f' e16 d cis h
+    a2 a4 f'~
+    f es8 d cis4 d~
+    d cis d2
+    c2.\pE h4 %40
+    c2 r8 g h a16 g
+    c8 h c16 h c a h c a h g4
+    r8 h a gis16 fis \once \tieDashed gis4~ gis16 a fis gis
+    a2 h
+    r4 r8 g' e a, f! f %45
+    e f16 g e8. f16 f4 a8 h16 a
+    gis4 \once \tieDashed a2~ a8 gis16 fis \noBreak
+    gis8 gis a16 gis a fis gis2\fermata \bar "||"
+    \tempoCrucifixus R1 \noBreak
+    r2 g8\fE a h c %50
+    d a d2 cis8 h?
+    a2 r4 c
+    d4. e8 f c f4~
+    f e8 d c2
+    c2. c4 %55
+    c2. f4\pE \noBreak
+    b,2 a\fermata \bar "||"
+    \tempoEtResurrexit c4\pE c16 d b c a8 f \once \tieDashed f'4~ \noBreak
+    f8 e16 d e d cis h a4 h16 c? a h
+    c8 d e4. d8 c4~ %60
+    c h c2
+    R1
+    a4.\fE b8 a4 r
+    f2^\critnote g4 c,8 f
+    c'8. b16 a8 d cis d e a, %65
+    d16 cis d e f4. e8 \once \tieDashed d4~
+    d8 cis16 h a4 r8 f b16 a b c
+    d c d e f8 f, b4 a
+    g8-\critnote a g f c'2
+    c r %70
+    r8 c4 c8 c4 a
+    r8 f'4 f8 f4 d
+    b8 g-\critnote a f c'2~
+    c4 c r2\fermata
+    R1*7 %81
+    h8\fE c d h es2
+    d8 es f d d4 c
+    r2 r8 b4 a8
+    g2 a8 b4 a8 %85
+    b4 r r2
+    R1*2
+    r2 r4 r8 c\fE
+    c2. c4 %90
+    c2 g8 c b a
+    g f e2 d4
+    a'2 r8 a4 a8
+    b2 b8 c d e \noBreak
+    f4 c \tempoMortuorum b a \noBreak %95
+    g f8 g a2
+    r8 a e'4 e8 d4 c!8
+    b4 a g a \noBreak
+    g8 f4 e8 f2
+    \tempoAmen c'4. b8 a d c b \noBreak %100
+    a g16 f g8 c4 h8 a4
+    R1
+    c8 b a d c f e d
+    c2 r8 c b a
+    g4 a b r8 f' %105
+    e d c b a g a h
+    c1
+    R
+    c4. b8 a d c b
+    a4 b c8 f es d %110
+    c d es c \tempoAmenB d2
+    c1\fermata \bar "|." %112 finis
+  }
+}
