@@ -482,10 +482,85 @@ AgnusTenore = {
   \relative c' {
     \clef "treble_8"
     \key f \major \time 4/4 \autoBeamOff \tempoAgnus
-    
+    \mvTr c4.\pE^\soloE f8 b,4 b8 b
+    b4 a r8 a d e
+    f4 e r d8 c!
+    h4 c c( h)
+    c2 r %5
+    R1*2
+    r2 \mvTr d4\fE^\tuttiE d
+    e e8 d cis4 c8 c \noBreak
+    b c d4 cis2\fermata \bar "||" %10
+    \time 6/4 \tempoDona \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \mvTr f2\pE^\soloE e4 f e( d) \noBreak
+    e2 f4 r8 c([ b g a f])
+    e4 e'8[ f e f] d4 e f~
+    f f( e) f2 r4
+    R1.*2 %16
+    r2 r4 r \mvTr a,\fE^\tuttiE g8([ f)]
+    e2 f4 b_( a8[ g a b]
+    c2.) c
+    r8 c b([ g a f] e4) f2 %20
+    r8 d'4 c8[ b a] g2.
+    a8[ b] c2 f,4 f' e8[( d])
+    cis2 d4 a2 a4
+    r8 f'[\pE e cis d h?] a4 g8[ e f d]
+    e4 f2 r8 b4\fE a8[ g f] %25
+    g2 a4~ a a2
+    a4 c! b8([ a)] g8[( a] b4) a
+    g8[( c b g a f]) e2 r4
+    r8 c'([\pE b g a f] e4) f2
+    r8 \mvTr d'4\fE^\critnote c8[ b a] g2. %30
+    a8[ b] c2 a r4
+    r8 c\pE b([ g a f)] e2 r4
+    g2\fE f4 b2^\critnote g4
+    a8([ b] c2) a4 a( b)
+    c2 r4 r8 d\pE c[ a b g] %35
+    \time 3/4 f[ g a b c a]
+    \tempoDonaB
+      \revert Staff.TimeSignature.style
+      \unset Staff.timeSignatureFraction
+      \time 4/4
+      b2\fE a\fermata \bar "|." %37 FINIS
   }
 }
 
 AgnusTenoreLyrics = \lyricmode {
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Mi -- se --
+  re -- re no --
+  bis. %5
 
+  A -- gnus %8
+  De -- i, qui tol -- lis pec --
+  ca -- ta mun -- di: %10
+  Do -- na no -- bis
+  pa -- cem, pa --
+  cem, pa -- _ _ \xE cem, __
+  pa -- \x cem,
+
+  do -- na %17
+  no -- bis pa --
+  cem,
+  da pa -- cem, %20
+  pa -- _ _
+  _ _ cem, \xE do -- na
+  no -- bis \x pa -- cem,
+  pa -- _ _
+  _ cem, pa -- _ %25
+  _ cem, __ pa --
+  cem, do -- na no -- bis
+  pa -- cem,
+  pa -- cem,
+  pa -- _ _ %30
+  _ _ cem,
+  \xE da \x pa -- cem,
+  do -- na no -- bis
+  pa -- cem, pa --
+  cem, da pa -- %35
+  _
+  _ cem. %37 FINIS
 }

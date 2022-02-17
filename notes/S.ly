@@ -509,21 +509,78 @@ SanctusSopranoLyrics = \lyricmode {
   sis. %56 finis
 }
 
-% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
-% Mi -- se -- re -- re no -- bis.
-% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
-% Mi -- se -- re -- re no -- bis.
-% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
-% Do -- na no -- bis pa -- cem.
-
 AgnusSoprano = {
   \relative c' {
     \clef treble
     \key f \major \time 4/4 \autoBeamOff \tempoAgnus
-    
+    R1*7 %7
+    \mvTr a'4.\fE^\tuttiE a8 d4 d8 c
+    b2 a4 a \noBreak
+    b8 a a([ g)] a2\fermata \bar "||" %10
+    \time 6/4 \tempoDona \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      r4 \mvTr f\pE^\soloE g a2 h4 \noBreak
+    c_( b8[ g a f] e2) f4
+    g4. a8[ g a] b2 a4(
+    g) g2 f r4
+    R1.*2 %16
+    r2 r4 r \mvTr c'!\fE^\tuttiE b8([ a)]
+    g2 a4 b2( a4)
+    g2 r4 r8 c([ b g a f]
+    e2) f4 c'4. b8[ a g] %20
+    f4 f'8[ e d c] b2.
+    a4 g2 f4 a g8([ f)]
+    e2 d4 e e r
+    r8 a([\pE g e f d]) cis2 r4
+    a'4.\fE g8[ f e] d4 d'8[ c! b a] %25
+    g2. f4 e2
+    d4 r r r8 c' b([ g a f]
+    e4 b') a r8 c([\p b g a f]
+    e2) f4 c'4.\f b8[ a g]
+    f4 f'8[ e d c] b2. %30
+    a4 g2 f4 a\pE b
+    c2 c4 r8 c([ b g a f]
+    e2) f4 b2.\fE
+    a4 g2 f r4
+    c'2 b4 r8 f'\p es[ c d b] %35
+    \time 3/4 a[ b c d es c]
+    \tempoDonaB
+      \revert Staff.TimeSignature.style
+      \unset Staff.timeSignatureFraction
+      \time 4/4
+      d2\fE c\fermata \bar "|." %37 FINIS
   }
 }
 
 AgnusSopranoLyrics = \lyricmode {
+  A -- gnus De -- i, qui %8
+  tol -- lis pec --
+  ca -- ta mun -- di: %10
+  Do -- na no -- bis
+  pa -- cem,
+  pa -- _ _ \xE cem, __
+  pa -- \x cem,
 
+  do -- na %17
+  no -- bis pa --
+  cem, pa --
+  cem, pa -- _ %20
+  _ _ _
+  _ _ cem, do -- na
+  no -- bis pa -- cem,
+  pa -- cem,
+  pa -- _ _ _ %25
+  _ _ _
+  cem, da pa --
+  cem, pa --
+  cem, pa -- _
+  _ _ _ %30
+  cem, pa -- cem, do -- na
+  no -- bis pa --
+  cem, pa --
+  cem, pa -- cem,
+  pa -- cem, da pa -- %35
+  _
+  _ cem. %37 FINIS
 }

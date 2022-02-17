@@ -610,10 +610,89 @@ AgnusOrgano = {
   \relative c {
     \clef bass
     \key f \major \time 4/4 \tempoAgnus
-    
+    \mvTr f2\pE-\solo f4 e
+    f4. e8 d4. cis8
+    d4 a8 a'16 g f8 e d4
+    g c, g2
+    c4 c'8 b! a4. f8 %5
+    g4 a d, g
+    c8 b a b c4 c,
+    f2 \mvTr b4.\fE-\tuttiE a8
+    g2 a \noBreak
+    d,8 c b4 a2\fermata \bar "||" %10
+    \time 6/4 \tempoDona \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \mvTr f'2\pE-\soloE c4 f2 g4 \noBreak
+    c,2. c
+    c2 r4 b c d
+    b c2 f, g4
+    a2 d,4 a'2. %15
+    a a2 f4
+    g a2 d4 \clef "treble_8" \mvTr a'\fE-\tuttiE g8 f
+    e4 \clef bass c b8 a g4 g' f
+    c2. c
+    c c4 d2 %20
+    \clef "treble_8" r8 d'4 c8 \clef bass g4~ g8 f e d c4
+    f c2 f g4
+    a2. a
+    \mvTr a,\pE-\tasto a
+    a4 d2 \clef "treble_8" r8 b'4\fE a8 \clef bass g4~ \noBreak %25
+    g8 f e d cis4 d a2
+    d4 a' g8 f e2 f4
+    c2. \mvTr c\pE-\tasto
+    c c4 d2
+    \clef "treble_8" r8 d'4\fE c8 \clef bass \once \tieDashed g4~ g8 f e d c4 %30
+    f c2 f, r4
+    \mvTr c'2.\pE-\tasto c
+    c4\fE b a g2 c4
+    f, c'2 f,2.
+    f2 r4 r2 r4 %35
+    \time 3/4 R2.
+    \tempoDonaB
+      \revert Staff.TimeSignature.style
+      \unset Staff.timeSignatureFraction
+      \time 4/4
+      b2 f\fermata \bar "|." %37 FINIS
   }
 }
 
 AgnusBassFigures = \figuremode {
-
+  r2 <2>4 <6 5>
+  <4> <3>2 r8 <[6]>
+  r4 <4>8 <_+> <6>2
+  <_!> <4>4 <_!>
+  r4. <[6]>8 <_+>4. <[6]>8 %5
+  <6> <5> <4> <_+> r2
+  r4 \bo <[6]> <4> \bc <[3]>
+  r1
+  \bo <[6]>2 <_+>4 <_!>
+  <6>8 q <7> \bc <[6]> <_+>2 %10
+  r1 r4 <[_!]>
+  <5 3>2 <6 4>4 <5 3>2 <6 4>4
+  <[5 3]>1 <7>4 <[5]>
+  <6 5> <4> <3> r2 <6 5>4
+  <_+>2. <5 _+>2 <6 4>4 %15
+  <5 _+>2 <6 4>4 <5 _+>2 <6>4
+  <6 5> <_+>2. <10>4 \bo <[10]>8 \bc q
+  <10>2. <5>4 <6>2
+  <5 3>2 <6 4>4 <5 3>2 <6 4>4
+  <5 3>2 <6 4>4 <5 3> <7>8 <6> <5>4 %20
+  r1.
+  r4 <4> <3> r2 <6>8 <5>
+  <5 _+>2 <6 4>4 <5 _+>2 <6 4>4
+  r1.
+  <_+> %25
+  r2 <[6]> <4>4 <_+>
+  r <[6]>2 <6>4 <5>2
+  \bo <[5 3]>2 \bc <[6 4]>4 r2.
+  r1.
+  r %30
+  r4 \bo <[4]> \bc <[3]> r2.
+  r1.
+  \bo <[5 3]>4 <\t \t> \bc <[6 \l]> r2 <7>4
+  r <4> <3> <5 3>2 <6 4>4
+  <5 3>1. %35
+  r2.
+  r1 %37 FINIS
 }

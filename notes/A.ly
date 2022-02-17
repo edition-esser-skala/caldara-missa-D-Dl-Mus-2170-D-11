@@ -468,10 +468,80 @@ AgnusAlto = {
   \relative c' {
     \clef treble
     \key f \major \time 4/4 \autoBeamOff \tempoAgnus
-    
+    R1*3 %3
+    r2 \mvTr d4.\pE^\soloE d8
+    e4 e8 g cis,4 cis8 a' %5
+    g f e4 d b'8 g
+    e4 f f( e)
+    f r \mvTr f\fE^\tuttiE f
+    g g8 f e4 e8 e \noBreak
+    f e f([ d)] e2\fermata \bar "||" %10
+    \time 6/4 \tempoDona \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      R1.*3
+    r2 r4 r \mvTr f\pE^\soloE e8([ d)]
+    cis2 d4 e8[ a g e f d] %15
+    cis2 d4 e d8[ cis] d4~
+    d8[ e] cis2 d4 r r
+    r \mvTr e\fE^\tuttiE d8([ c)] d4( e) f
+    e2 f4 e2 f4
+    g2 c,4 r f4. e8 %20
+    d2 b'4. a8[( g f] e4)
+    f f( e) f r r
+    r8 a g[( e f d] cis2) d4
+    cis2(\pE d4) e2 r4
+    r r d8\fE c b2 g'4~ %25
+    g8 a([ g f] e4) d d( cis)
+    d r r r2 r4
+    r2 r4 r8 a'\pE g([ e f d]
+    c2) c4 r f4.\fE e8
+    d2 b'4 g4.(^\critnote f8 e4) %30
+    f f( e) f f\pE g
+    a e r r8 a([ g e f d]
+    c2) c4 d2\fE e4
+    f2 e4 r8 f[( es c d b]
+    a2) b4 \once \tieDashed f'2.~\pE %35
+    \time 3/4 \once \tieDashed f~
+    \tempoDonaB
+      \revert Staff.TimeSignature.style
+      \unset Staff.timeSignatureFraction
+      \time 4/4
+      f2\fE f\fermata \bar "|." %37 FINIS
   }
 }
 
 AgnusAltoLyrics = \lyricmode {
+  A -- gnus %4
+  De -- i, qui tol -- lis pec -- %5
+  ca -- ta mun -- di: Mi -- se --
+  re -- re no --
+  bis. A -- gnus
+  De -- i, qui tol -- lis pec --
+  ca -- ta mun -- di: %10
 
+  Do -- na %14
+  no -- bis pa -- %15
+  _ cem, pa -- _ \xE cem, __
+  pa -- \x cem,
+  do -- na no -- bis
+  pa -- _ _ _
+  _ cem, do -- na %20
+  no -- bis pa --
+  cem, pa -- cem,
+  da pa -- \xE cem,
+  pa -- \x cem,
+  do -- na no -- bis __ %25
+  pa -- \xE cem, pa -- \x
+  cem,
+  da pa --
+  cem, do -- na
+  no -- bis pa -- %30
+  cem, pa -- cem, do -- na
+  no -- bis pa --
+  cem, do -- na
+  no -- bis pa --
+  cem, pa -- %35
+
+  cem. %37 FINIS
 }

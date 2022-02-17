@@ -454,10 +454,72 @@ AgnusBasso = {
   \relative c {
     \clef bass
     \key f \major \time 4/4 \autoBeamOff \tempoAgnus
-    
+    R1*7 %7
+    \mvTr f4\fE^\tuttiE f b b8 a
+    g2 a4 4 \noBreak
+    d,8 c b4 a2\fermata \bar "||" %10
+    \time 6/4 \tempoDona \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      R1.*3
+    r2 r4 r \mvTr a'\pE^\solo g8([ f)]
+    e2 d4 cis2 d4 %15
+    r8 a'[ g e f d] cis4 d8[ e] f4
+    e e2 d4 r r
+    r \mvTr c\fE^\tuttiE b8([ a)] g4( g') f
+    c8[ c' b g a f] c2.
+    c c4 d2 %20
+    r4 r \once \tieDashed g4~ g8 f e([ d] c4)
+    f c2 f,4 f' g
+    a2 a4 r8 a[ g e f d]
+    \once \tieDashed a2.~\pE a8[ f' e cis d h?]
+    a4 d2 r4 r g~\fE %25
+    g8 f e([ d] cis4) d a2
+    d4 a' g8([ f)] e2 f4
+    c8[ a' g e^\critnote f d] \once \tieDashed c2.~\pE
+    \once \tieDashed c~ c4 d2
+    r4 r \once \tieDashed g~\fE g8[ f e d] c4 %30
+    f c2 f, r4
+    r8 a'\pE g[ e f d] c2.
+    c4(\fE b) a g2( c4)
+    f, c'2 f, r4
+    r8 f' es[ c d b] \once \tieDashed f2.~\p %35
+    \time 3/4 f
+    \tempoDonaB
+      \revert Staff.TimeSignature.style
+      \unset Staff.timeSignatureFraction
+      \time 4/4
+      b2\fE f\fermata \bar "|." %37 FINIS
   }
 }
 
 AgnusBassoLyrics = \lyricmode {
+  A -- gnus De -- i, qui %8
+  tol -- lis pec --
+  ca -- ta mun -- di: %10
 
+  Do -- na %14
+  no -- bis pa -- cem, %15
+  pa -- _ _ _
+  \xE cem, pa -- \x cem,
+  do -- na no -- bis
+  pa -- _
+  \xE cem, pa -- \x cem, %20
+  do -- na no --
+  bis pa -- cem, do -- na
+  no -- bis pa --
+  _
+  _ cem, do -- %25
+  na no -- bis pa --
+  cem, do -- na no -- bis
+  pa -- _
+  cem,
+  pa -- _ %30
+  cem, pa -- cem,
+  \xE da \x pa -- cem,
+  do -- na no --
+  bis \x pa -- cem,
+  \xE da \x pa -- _ %35
+  
+  _ cem. %37 FINIS
 }

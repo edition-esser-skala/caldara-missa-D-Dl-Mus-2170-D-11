@@ -274,6 +274,44 @@ AgnusViolinoII = {
   \relative c' {
     \clef treble
     \key f \major \time 4/4 \tempoAgnus
-    
+    a'4.\pE a8 b4 c
+    c2 d8 e f e
+    d4. cis8 d4 d~
+    d g, g2
+    g4 r a4. a8 %5
+    b4 a a8 d4 d8
+    e d c2 g4
+    f2-\critnote d'4.\fE c8
+    b2 a \noBreak
+    b8 a4 g8 a2\fermata \bar "||" %10
+    \time 6/4 \tempoDona \newSpacingSection
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      R1.*6 %16
+    r2 r4 r c!\fE b8 a
+    g2 a4 b2 a4
+    g2 r4 r8 c b g a f
+    e2 f4 c'4. b8 a g %20
+    f4 f'8 e d c b2.
+    a4 g2 f4 a g8 f
+    e2 d4 e2 r4
+    R1.
+    a4.\fE g8 f e d4 d'8 c! b a %25
+    g2. f4 e2
+    d4 r r r8 c' b g a f
+    e4 b' a r2 r4
+    r2 r4 c4.\fE b8 a g
+    f4 f'8 e d c b2. %30
+    a4 g2 f4 r r
+    R1.
+    r2 r4 b2.\fE
+    a4 g2 f r4
+    c'2 b4 r2 r4 %35
+    \time 3/4 R2.
+    \tempoDonaB
+      \revert Staff.TimeSignature.style
+      \unset Staff.timeSignatureFraction
+      \time 4/4
+      d2\fE c\fermata \bar "|." %37 FINIS
   }
 }

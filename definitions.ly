@@ -30,6 +30,9 @@ tempoSanctus = \tempoMarkup "Adagio"
   tempoOsanna = \tempoMarkup "Allegro"
   tempoBenedictus = \tempoMarkup "[Adagio]"
   tempoOsannaII = \tempoMarkup "Allegro"
+tempoAgnus = \tempoMarkup "Adagio"
+  tempoDona = \tempoMarkup "[Allegro]"
+  tempoDonaB = \tempoMarkup "Adagio"
 
 
 \include "notes/vl1.ly"
